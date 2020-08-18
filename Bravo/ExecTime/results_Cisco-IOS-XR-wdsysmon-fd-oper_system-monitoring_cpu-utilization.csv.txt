@@ -1,0 +1,9 @@
++--------------------------------------------------------------------------+---------------+--------------------+
+|                                 Data Set                                 | Stream Length |   Execution Time   |
++--------------------------------------------------------------------------+---------------+--------------------+
+| Cisco-IOS-XR-wdsysmon-fd-oper_system-monitoring_cpu-utilization.csv_0.99 |     82345     | 0.4508237838745117 |
+| Cisco-IOS-XR-wdsysmon-fd-oper_system-monitoring_cpu-utilization.csv_0.95 |     82345     | 0.3735201358795166 |
+| Cisco-IOS-XR-wdsysmon-fd-oper_system-monitoring_cpu-utilization.csv_0.9  |     82345     | 0.3868401050567627 |
+| Cisco-IOS-XR-wdsysmon-fd-oper_system-monitoring_cpu-utilization.csv_0.85 |     82345     | 0.3677079677581787 |
+| Cisco-IOS-XR-wdsysmon-fd-oper_system-monitoring_cpu-utilization.csv_0.8  |     82345     | 0.3587028980255127 |
++--------------------------------------------------------------------------+---------------+--------------------+

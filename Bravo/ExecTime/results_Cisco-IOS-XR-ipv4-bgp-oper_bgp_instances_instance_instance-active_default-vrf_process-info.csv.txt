@@ -1,0 +1,9 @@
++-----------------------------------------------------------------------------------------------------+---------------+--------------------+
+|                                               Data Set                                              | Stream Length |   Execution Time   |
++-----------------------------------------------------------------------------------------------------+---------------+--------------------+
+| Cisco-IOS-XR-ipv4-bgp-oper_bgp_instances_instance_instance-active_default-vrf_process-info.csv_0.99 |     13537     | 1.5178799629211426 |
+| Cisco-IOS-XR-ipv4-bgp-oper_bgp_instances_instance_instance-active_default-vrf_process-info.csv_0.95 |     13537     | 1.5383062362670898 |
+|  Cisco-IOS-XR-ipv4-bgp-oper_bgp_instances_instance_instance-active_default-vrf_process-info.csv_0.9 |     13537     | 1.449341058731079  |
+| Cisco-IOS-XR-ipv4-bgp-oper_bgp_instances_instance_instance-active_default-vrf_process-info.csv_0.85 |     13537     | 1.457859992980957  |
+|  Cisco-IOS-XR-ipv4-bgp-oper_bgp_instances_instance_instance-active_default-vrf_process-info.csv_0.8 |     13537     | 1.444777011871338  |
++-----------------------------------------------------------------------------------------------------+---------------+--------------------+

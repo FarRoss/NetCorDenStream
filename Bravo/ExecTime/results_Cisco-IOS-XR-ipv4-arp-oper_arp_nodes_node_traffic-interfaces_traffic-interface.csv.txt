@@ -1,0 +1,9 @@
++-----------------------------------------------------------------------------------------+---------------+--------------------+
+|                                         Data Set                                        | Stream Length |   Execution Time   |
++-----------------------------------------------------------------------------------------+---------------+--------------------+
+| Cisco-IOS-XR-ipv4-arp-oper_arp_nodes_node_traffic-interfaces_traffic-interface.csv_0.99 |    1236612    | 18.80275797843933  |
+| Cisco-IOS-XR-ipv4-arp-oper_arp_nodes_node_traffic-interfaces_traffic-interface.csv_0.95 |    1236612    | 18.780865907669067 |
+|  Cisco-IOS-XR-ipv4-arp-oper_arp_nodes_node_traffic-interfaces_traffic-interface.csv_0.9 |    1236612    | 18.804414987564087 |
+| Cisco-IOS-XR-ipv4-arp-oper_arp_nodes_node_traffic-interfaces_traffic-interface.csv_0.85 |    1236612    | 18.607845067977905 |
+|  Cisco-IOS-XR-ipv4-arp-oper_arp_nodes_node_traffic-interfaces_traffic-interface.csv_0.8 |    1236612    | 19.668955087661743 |
++-----------------------------------------------------------------------------------------+---------------+--------------------+

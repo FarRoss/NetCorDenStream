@@ -1,0 +1,29 @@
++-------------------------------------------------------------------------------------------------------+---------------+--------------------+
+|                                                Data Set                                               | Stream Length |   Execution Time   |
++-------------------------------------------------------------------------------------------------------+---------------+--------------------+
+| Cisco-IOS-XR-infra-statsd-oper_infra-statistics_interfaces_interface_latest_generic-counters.csv_0.99 |     700000    | 13.166262149810791 |
+| Cisco-IOS-XR-infra-statsd-oper_infra-statistics_interfaces_interface_latest_generic-counters.csv_0.99 |     900000    | 16.943597078323364 |
+| Cisco-IOS-XR-infra-statsd-oper_infra-statistics_interfaces_interface_latest_generic-counters.csv_0.99 |    1100000    | 20.465559005737305 |
+| Cisco-IOS-XR-infra-statsd-oper_infra-statistics_interfaces_interface_latest_generic-counters.csv_0.99 |    1300000    | 25.29185676574707  |
+| Cisco-IOS-XR-infra-statsd-oper_infra-statistics_interfaces_interface_latest_generic-counters.csv_0.99 |    1500000    | 32.274441957473755 |
+| Cisco-IOS-XR-infra-statsd-oper_infra-statistics_interfaces_interface_latest_generic-counters.csv_0.95 |     700000    | 14.25325322151184  |
+| Cisco-IOS-XR-infra-statsd-oper_infra-statistics_interfaces_interface_latest_generic-counters.csv_0.95 |     900000    | 23.211260080337524 |
+| Cisco-IOS-XR-infra-statsd-oper_infra-statistics_interfaces_interface_latest_generic-counters.csv_0.95 |    1100000    | 22.363040924072266 |
+| Cisco-IOS-XR-infra-statsd-oper_infra-statistics_interfaces_interface_latest_generic-counters.csv_0.95 |    1300000    | 29.247904062271118 |
+| Cisco-IOS-XR-infra-statsd-oper_infra-statistics_interfaces_interface_latest_generic-counters.csv_0.95 |    1500000    | 37.76895308494568  |
+|  Cisco-IOS-XR-infra-statsd-oper_infra-statistics_interfaces_interface_latest_generic-counters.csv_0.9 |     700000    | 15.836380004882812 |
+|  Cisco-IOS-XR-infra-statsd-oper_infra-statistics_interfaces_interface_latest_generic-counters.csv_0.9 |     900000    | 19.736907720565796 |
+|  Cisco-IOS-XR-infra-statsd-oper_infra-statistics_interfaces_interface_latest_generic-counters.csv_0.9 |    1100000    | 23.679978132247925 |
+|  Cisco-IOS-XR-infra-statsd-oper_infra-statistics_interfaces_interface_latest_generic-counters.csv_0.9 |    1300000    | 33.895079135894775 |
+|  Cisco-IOS-XR-infra-statsd-oper_infra-statistics_interfaces_interface_latest_generic-counters.csv_0.9 |    1500000    | 45.84903407096863  |
+| Cisco-IOS-XR-infra-statsd-oper_infra-statistics_interfaces_interface_latest_generic-counters.csv_0.85 |     700000    | 20.233974933624268 |
+| Cisco-IOS-XR-infra-statsd-oper_infra-statistics_interfaces_interface_latest_generic-counters.csv_0.85 |     900000    | 25.01065492630005  |
+| Cisco-IOS-XR-infra-statsd-oper_infra-statistics_interfaces_interface_latest_generic-counters.csv_0.85 |    1100000    | 25.457918882369995 |
+| Cisco-IOS-XR-infra-statsd-oper_infra-statistics_interfaces_interface_latest_generic-counters.csv_0.85 |    1300000    | 35.642138957977295 |
+| Cisco-IOS-XR-infra-statsd-oper_infra-statistics_interfaces_interface_latest_generic-counters.csv_0.85 |    1500000    | 32.256860971450806 |
+|  Cisco-IOS-XR-infra-statsd-oper_infra-statistics_interfaces_interface_latest_generic-counters.csv_0.8 |     700000    | 13.145479917526245 |
+|  Cisco-IOS-XR-infra-statsd-oper_infra-statistics_interfaces_interface_latest_generic-counters.csv_0.8 |     900000    | 17.200505018234253 |
+|  Cisco-IOS-XR-infra-statsd-oper_infra-statistics_interfaces_interface_latest_generic-counters.csv_0.8 |    1100000    | 20.942148685455322 |
+|  Cisco-IOS-XR-infra-statsd-oper_infra-statistics_interfaces_interface_latest_generic-counters.csv_0.8 |    1300000    | 29.793062925338745 |
+|  Cisco-IOS-XR-infra-statsd-oper_infra-statistics_interfaces_interface_latest_generic-counters.csv_0.8 |    1500000    | 43.48839807510376  |
++-------------------------------------------------------------------------------------------------------+---------------+--------------------+

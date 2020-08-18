@@ -1,0 +1,9 @@
++-----------------------------------------------------------------------------------------------------------+---------------+-------------------+
+|                                                  Data Set                                                 | Stream Length |   Execution Time  |
++-----------------------------------------------------------------------------------------------------------+---------------+-------------------+
+| Cisco-IOS-XR-ipv4-bgp-oper_bgp_instances_instance_instance-active_default-vrf_neighbors_neighbor.csv_0.99 |     13696     | 8.441207885742188 |
+| Cisco-IOS-XR-ipv4-bgp-oper_bgp_instances_instance_instance-active_default-vrf_neighbors_neighbor.csv_0.95 |     13696     | 8.119674921035767 |
+|  Cisco-IOS-XR-ipv4-bgp-oper_bgp_instances_instance_instance-active_default-vrf_neighbors_neighbor.csv_0.9 |     13696     | 9.526142358779907 |
+| Cisco-IOS-XR-ipv4-bgp-oper_bgp_instances_instance_instance-active_default-vrf_neighbors_neighbor.csv_0.85 |     13696     | 9.384882926940918 |
+|  Cisco-IOS-XR-ipv4-bgp-oper_bgp_instances_instance_instance-active_default-vrf_neighbors_neighbor.csv_0.8 |     13696     | 7.895470142364502 |
++-----------------------------------------------------------------------------------------------------------+---------------+-------------------+

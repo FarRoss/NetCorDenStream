@@ -1,0 +1,9 @@
++---------------------------------------------------------------------------+---------------+---------------------+
+|                                  Data Set                                 | Stream Length |    Execution Time   |
++---------------------------------------------------------------------------+---------------+---------------------+
+| Cisco-IOS-XR-cdp-oper_cdp_nodes_node_neighbors_summaries_summary.csv_0.99 |     29090     | 0.25280117988586426 |
+| Cisco-IOS-XR-cdp-oper_cdp_nodes_node_neighbors_summaries_summary.csv_0.95 |     29090     |  0.2418670654296875 |
+|  Cisco-IOS-XR-cdp-oper_cdp_nodes_node_neighbors_summaries_summary.csv_0.9 |     29090     | 0.24718213081359863 |
+| Cisco-IOS-XR-cdp-oper_cdp_nodes_node_neighbors_summaries_summary.csv_0.85 |     29090     | 0.23708295822143555 |
+|  Cisco-IOS-XR-cdp-oper_cdp_nodes_node_neighbors_summaries_summary.csv_0.8 |     29090     |  0.3103799819946289 |
++---------------------------------------------------------------------------+---------------+---------------------+

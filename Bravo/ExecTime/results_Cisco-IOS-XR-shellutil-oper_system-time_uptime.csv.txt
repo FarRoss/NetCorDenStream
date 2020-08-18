@@ -1,0 +1,9 @@
++---------------------------------------------------------+---------------+---------------------+
+|                         Data Set                        | Stream Length |    Execution Time   |
++---------------------------------------------------------+---------------+---------------------+
+| Cisco-IOS-XR-shellutil-oper_system-time_uptime.csv_0.99 |     41732     | 0.07766413688659668 |
+| Cisco-IOS-XR-shellutil-oper_system-time_uptime.csv_0.95 |     41732     | 0.08054614067077637 |
+|  Cisco-IOS-XR-shellutil-oper_system-time_uptime.csv_0.9 |     41732     |  0.0767521858215332 |
+| Cisco-IOS-XR-shellutil-oper_system-time_uptime.csv_0.85 |     41732     |  0.0928199291229248 |
+|  Cisco-IOS-XR-shellutil-oper_system-time_uptime.csv_0.8 |     41732     | 0.09706497192382812 |
++---------------------------------------------------------+---------------+---------------------+

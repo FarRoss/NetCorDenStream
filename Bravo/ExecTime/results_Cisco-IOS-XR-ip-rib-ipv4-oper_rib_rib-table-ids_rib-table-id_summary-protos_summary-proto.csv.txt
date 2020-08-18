@@ -1,0 +1,9 @@
++----------------------------------------------------------------------------------------------------+---------------+--------------------+
+|                                              Data Set                                              | Stream Length |   Execution Time   |
++----------------------------------------------------------------------------------------------------+---------------+--------------------+
+| Cisco-IOS-XR-ip-rib-ipv4-oper_rib_rib-table-ids_rib-table-id_summary-protos_summary-proto.csv_0.99 |    1549165    | 56.119813203811646 |
+| Cisco-IOS-XR-ip-rib-ipv4-oper_rib_rib-table-ids_rib-table-id_summary-protos_summary-proto.csv_0.95 |    1549165    | 58.45968508720398  |
+| Cisco-IOS-XR-ip-rib-ipv4-oper_rib_rib-table-ids_rib-table-id_summary-protos_summary-proto.csv_0.9  |    1549165    | 52.091809034347534 |
+| Cisco-IOS-XR-ip-rib-ipv4-oper_rib_rib-table-ids_rib-table-id_summary-protos_summary-proto.csv_0.85 |    1549165    | 49.83770203590393  |
+| Cisco-IOS-XR-ip-rib-ipv4-oper_rib_rib-table-ids_rib-table-id_summary-protos_summary-proto.csv_0.8  |    1549165    | 43.76236009597778  |
++----------------------------------------------------------------------------------------------------+---------------+--------------------+

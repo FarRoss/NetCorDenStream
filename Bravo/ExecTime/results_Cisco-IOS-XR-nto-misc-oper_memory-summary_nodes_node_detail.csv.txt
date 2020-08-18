@@ -1,0 +1,9 @@
++----------------------------------------------------------------------+---------------+--------------------+
+|                               Data Set                               | Stream Length |   Execution Time   |
++----------------------------------------------------------------------+---------------+--------------------+
+| Cisco-IOS-XR-nto-misc-oper_memory-summary_nodes_node_detail.csv_0.99 |     82907     | 1.9579920768737793 |
+| Cisco-IOS-XR-nto-misc-oper_memory-summary_nodes_node_detail.csv_0.95 |     82907     | 1.9180407524108887 |
+| Cisco-IOS-XR-nto-misc-oper_memory-summary_nodes_node_detail.csv_0.9  |     82907     | 1.8938288688659668 |
+| Cisco-IOS-XR-nto-misc-oper_memory-summary_nodes_node_detail.csv_0.85 |     82907     | 1.8465769290924072 |
+| Cisco-IOS-XR-nto-misc-oper_memory-summary_nodes_node_detail.csv_0.8  |     82907     | 2.0724878311157227 |
++----------------------------------------------------------------------+---------------+--------------------+

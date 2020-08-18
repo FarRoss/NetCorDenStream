@@ -1,0 +1,17 @@
+{
+  "fileName": [
+    "Cisco-IOS-XR-cdp-oper:cdp_nodes_node_neighbors_summaries_summary.csv",
+    "Cisco-IOS-XR-infra-statsd-oper:infra-statistics_interfaces_interface_latest_generic-counters.csv",
+    "Cisco-IOS-XR-infra-syslog-oper:syslog_messages_message.csv",
+    "Cisco-IOS-XR-ip-rib-ipv4-oper:rib_rib-table-ids_rib-table-id_summary-protos_summary-proto.csv",
+    "Cisco-IOS-XR-ipv4-arp-oper:arp_nodes_node_traffic-interfaces_traffic-interface.csv",
+    "Cisco-IOS-XR-ipv4-bgp-oper:bgp_instances_instance_instance-active_default-vrf_neighbors_neighbor.csv",
+    "Cisco-IOS-XR-ipv4-bgp-oper:bgp_instances_instance_instance-active_default-vrf_process-info.csv",
+    "Cisco-IOS-XR-ipv4-ospf-oper:ospf_processes_process_default-vrf_ospf-summary.csv",
+    "Cisco-IOS-XR-nto-misc-oper:memory-summary_nodes_node_detail.csv",
+    "Cisco-IOS-XR-pfi-im-cmd-oper:interfaces_interface-summary.csv",
+    "Cisco-IOS-XR-procmem-oper:processes-memory_nodes_node_process-ids_process-id.csv",
+    "Cisco-IOS-XR-shellutil-oper:system-time_uptime.csv",
+    "Cisco-IOS-XR-wdsysmon-fd-oper:system-monitoring_cpu-utilization.csv"
+  ]
+}

@@ -1,0 +1,9 @@
++-----------------------------------------------------------------+---------------+---------------------+
+|                             Data Set                            | Stream Length |    Execution Time   |
++-----------------------------------------------------------------+---------------+---------------------+
+| Cisco-IOS-XR-infra-syslog-oper_syslog_messages_message.csv_0.99 |      5534     | 0.10934019088745117 |
+| Cisco-IOS-XR-infra-syslog-oper_syslog_messages_message.csv_0.95 |      5534     |  0.0823659896850586 |
+|  Cisco-IOS-XR-infra-syslog-oper_syslog_messages_message.csv_0.9 |      5534     | 0.07384085655212402 |
+| Cisco-IOS-XR-infra-syslog-oper_syslog_messages_message.csv_0.85 |      5534     | 0.09327483177185059 |
+|  Cisco-IOS-XR-infra-syslog-oper_syslog_messages_message.csv_0.8 |      5534     | 0.09550714492797852 |
++-----------------------------------------------------------------+---------------+---------------------+

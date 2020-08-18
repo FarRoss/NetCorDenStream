@@ -1,0 +1,9 @@
++--------------------------------------------------------------------+---------------+--------------------+
+|                              Data Set                              | Stream Length |   Execution Time   |
++--------------------------------------------------------------------+---------------+--------------------+
+| Cisco-IOS-XR-pfi-im-cmd-oper_interfaces_interface-summary.csv_0.99 |     252684    | 0.6216061115264893 |
+| Cisco-IOS-XR-pfi-im-cmd-oper_interfaces_interface-summary.csv_0.95 |     252684    | 0.6483380794525146 |
+| Cisco-IOS-XR-pfi-im-cmd-oper_interfaces_interface-summary.csv_0.9  |     252684    | 0.5883841514587402 |
+| Cisco-IOS-XR-pfi-im-cmd-oper_interfaces_interface-summary.csv_0.85 |     252684    | 0.6187670230865479 |
+| Cisco-IOS-XR-pfi-im-cmd-oper_interfaces_interface-summary.csv_0.8  |     252684    | 0.6108160018920898 |
++--------------------------------------------------------------------+---------------+--------------------+

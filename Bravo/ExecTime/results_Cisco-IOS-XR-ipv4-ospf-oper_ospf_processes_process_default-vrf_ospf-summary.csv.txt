@@ -1,0 +1,9 @@
++--------------------------------------------------------------------------------------+---------------+--------------------+
+|                                       Data Set                                       | Stream Length |   Execution Time   |
++--------------------------------------------------------------------------------------+---------------+--------------------+
+| Cisco-IOS-XR-ipv4-ospf-oper_ospf_processes_process_default-vrf_ospf-summary.csv_0.99 |     249940    | 1.3010599613189697 |
+| Cisco-IOS-XR-ipv4-ospf-oper_ospf_processes_process_default-vrf_ospf-summary.csv_0.95 |     249940    | 1.3003888130187988 |
+| Cisco-IOS-XR-ipv4-ospf-oper_ospf_processes_process_default-vrf_ospf-summary.csv_0.9  |     249940    | 1.289207935333252  |
+| Cisco-IOS-XR-ipv4-ospf-oper_ospf_processes_process_default-vrf_ospf-summary.csv_0.85 |     249940    | 1.2868459224700928 |
+| Cisco-IOS-XR-ipv4-ospf-oper_ospf_processes_process_default-vrf_ospf-summary.csv_0.8  |     249940    | 1.2932720184326172 |
++--------------------------------------------------------------------------------------+---------------+--------------------+
