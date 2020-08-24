@@ -1,10 +1,6 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
-"""
-Created on Thu Jun 29 15:48:32 2017
 
-@author: anr.putina
-"""
 simulation = True
 
 import sys

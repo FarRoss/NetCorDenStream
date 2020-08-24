@@ -91,7 +91,6 @@ class timeproximity():
 
     def proximity(self, topology, KNeighbors, dataset, threshold=0):
 
-        # dataset = configuration['dataset']['list']
 
         idxTime = self.getTimeIdx(self.node, dataset, threshold)
         df = pd.DataFrame(index=idxTime)
@@ -160,11 +159,9 @@ class timeproximity():
 
             # Get clear anomalous data
             anomalyClear = (time > clear['startTime']) & (time <= clear['endTime'])
-            # anomalyClearDF = df[anomalyClear]
             anomalyClearDF = df[~anomalyTimes]
 
             anomalyClearDF['ind'] = [i for i in range(len(anomalyClearDF))]
-            # currentEvent = currentEvent.drop(currentEvent.tail(1).index)
 
             resultStats[ct] = {}
             for delta in delta_lst:
@@ -172,9 +169,7 @@ class timeproximity():
 
                 for kNeighbors in kNeighbors_lst:
                     k = kNeighbors
-                    # resultStats[ct][k] = {}
 
-                    # resultStats[ct][k] = timeProxStats
                     checkOnce = True
 
                     for row in anomalyDF.itertuples(index=True):
@@ -190,18 +185,6 @@ class timeproximity():
                         if checkOnce == False:
                             timeProxStats[k]['Recall'].append(1)
                             break
-
-                    # lastDetection = 300
-                    # counterFalsePositives = 0
-                    # # Running algorithm to find precision, recall and false alarms
-                    # for r1 in anomalyClearDF.itertuples(index=True):
-                    #     if (r1[node_idx] == True):  # event node has flag sample as anomalous
-                    #         if (r1.ind + delta // 5) < anomalyClearDF.shape[0]:  # get the row for t + delta
-                    #             deltaRow1 = anomalyClearDF.iloc[r1.ind + delta // 5]
-                    #             if ((deltaRow1[nodeNeighbors] == True).sum() >= kNeighbors) and (
-                    #                     r1.time > lastDetection):  # k Neighbor has flag sample as anomalous, time proximity
-                    #                 counterFalsePositives += 1
-                    #                 lastDetection = r1.time
 
                     counterFalsePositives = self.proximityAlgo(anomalyClearDF, topology, k)
                     tp = TP.at[delta_lst.index(delta), str(kNeighbors) + '_Neighbor(s)']
@@ -227,6 +210,4 @@ class timeproximity():
                     else:
                         sys.exit('Problem in False')
                     resultStats[ct][delta] = timeProxStats
-                    # resultStats[k][delta] = timeProxStats
         return resultStats
-        #

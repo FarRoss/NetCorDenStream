@@ -1,14 +1,9 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
-"""
-Created on Thu Jun 29 17:46:51 2017
 
-@author: anr.putina
-"""
 
 import math
 import numpy as np
-import datetime
 
 
 def computeReductionFactor(lamb, steps):

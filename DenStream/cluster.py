@@ -1,11 +1,5 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
-"""
-Created on Thu Jun 29 17:48:58 2017
-
-@author: anr.putina
-"""
-
 
 class Cluster():
     def __init__(self):

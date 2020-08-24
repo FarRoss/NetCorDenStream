@@ -13,8 +13,6 @@ data_Path = 'Data/DatasetByNodes/'
 
 algorithm = 'DENSTREAM'
 
-# gs1 = gridspec.GridSpec(1, 1, wspace=0.0, hspace=0.32, top=.95, bottom=0.16, left=0.1, right=0.97)
-# gs1 = gridspec.GridSpec(1, 1, wspace=0.0, hspace=0.32, top=.85, bottom=0.16, left=0.1, right=0.97)
 
 gs1 = gridspec.GridSpec(2, 1, wspace=0.0, hspace=0.15, top=.88, bottom=0.16, left=0.08, right=0.98)
 SHOW_PLOT_FLAG = False
@@ -36,7 +34,6 @@ class signproximity():
             data_Path + node + dataset + '.csv', low_memory=False).dropna().drop('Unnamed: 0', axis=1)
 
         if self.feature == "ControlPlane":
-            # rawDF = rawDF[config['featureList']]
             rawDF = rawDF[featureList]
 
         # Without bravo
@@ -46,11 +43,10 @@ class signproximity():
         rawDF['ind'] = [i for i in range(len(rawDF))]
 
         self.nodeDataDF[node] = rawDF
-        # self.nodeDataDF[node] = rawDFresampled
 
     def getRawSampleData(self, topoNode, dataset, indexTime, featureList, threshold):
 
-        # Loading all datsets needed
+        # Loading all datasets needed
         if threshold != 0:
             df = pd.read_csv(
                 path + self.feature + '/' + dataset + '_' + algorithm + '_' + topoNode + '_' + str(threshold) + '.csv')
@@ -63,7 +59,6 @@ class signproximity():
 
         # Depending on the feature selection, choice features.
         if self.feature == "ControlPlane":
-            # rawDF = rawDF[config['featureList']]
             rawDF = rawDF[featureList]
 
         # Without bravo
@@ -188,15 +183,6 @@ class signproximity():
         # Process self.nodeDataDF and self.eventSP to plot correlation
 
         eDF = {}
-        # TODO: Pseudo code
-        # For each event, for each TP alarms raised.
-        # Get the rows from self.nodeDataDF of the baseNode and neighborNodes involved in that specific alarm.
-        # Run the pattern simplifier using the split_seq.
-        # Get a normal sample row data for the correlation comparison.
-        # Run pearson correlation to return ahd SP alarm between baseNode and NeighborNodes involved in SP alarm
-        # Plot both the > 0.5 pearson correlation and < 0.5 pearson correlation.
-        # Look at the bubbled signature features, reason out what feature cause this particular alarm.
-        # for event in self.truth.events:
         SP_eStats = self.eventSP[event['name']]
         for ct in range(len(SP_eStats)):
             SP_dict = SP_eStats[ct]
@@ -205,7 +191,6 @@ class signproximity():
             for k, va in SP_dict.items():
                 eDF[ct] = eDF[ct].append(self.nodeDataDF[k].loc[self.nodeDataDF[k].ind == va],
                                          ignore_index=True)  # Get row for SP alarm event.
-            # eDF[ct] = eDF[ct].append(self.nodeDataDF[k].loc[self.nodeDataDF[k].ind == (list(SP_dict.values())[-1] + 30)], ignore_index=True)
             eDF[ct] = eDF[ct].append(self.nodeDataDF[self.node].head(va - 1))
             colsToDrop = (eDF[ct].count()[eDF[ct].count().array < 3]).index.values.tolist()
             eDF[ct] = eDF[ct].drop(colsToDrop, axis=1)
@@ -230,11 +215,6 @@ class signproximity():
             ax.fill_between([i for i in range(nDF.mean().values.size)], nDF.mean().values - nDF.std().values,
                             nDF.mean().values + nDF.std().values)
             for i, (name, row) in enumerate(spDF_Tmp.iterrows()):
-                # ax.set_title(row.name)
-                # ax.set_aspect('equal')
-                # ax.plot([i for i in range(row.size)], np.log(row.values))
-                # if i == len(spDF_Tmp) - 1:
-                #     ax.plot([i for i in range(row.size)], row.values, marker='s', linewidth=1, color='blue')
                 if i == 0:
                     ax.plot([i for i in range(row.size)], row.values, marker='.', linewidth=1)
                     ax.set_title(str(dataset) + '_delta=' + str(self.delta) + '_Kneighbor=' + str(k) + '_' + str(
@@ -250,13 +230,6 @@ class signproximity():
     def plotFunction(self, x, y, nDF, k, flag):
         ax = plt.subplot(gs1[flag])
 
-        # ax.plot([i for i in range(nDF.mean().values.size)], nDF.mean().values,
-        #         linewidth=0.5, color='black', label='Mean', zorder=3)
-        # ax.fill_between([i for i in range(nDF.mean().values.size)], nDF.mean().values - nDF.std().values,
-        #                 nDF.mean().values + nDF.std().values, color='lime',
-        #                 alpha=0.4, linewidth=0, label='1 STD', zorder=3, interpolate=True)
-
-        # ax.plot(x, y, '-o', marker='s', ms=3, linewidth=0.5, label='t + $\delta$ stream', alpha=0.5, zorder=2)
         ax.set_xlim((0, 11))
         ax.set_xticks([i for i in range(0, 11)])
 
@@ -271,15 +244,6 @@ class signproximity():
                             nDF.mean().values + nDF.std().values, color='lime',
                             alpha=0.4, linewidth=0, zorder=3, interpolate=True)
 
-        #     # ax.plot(x, y, '-o', marker='s', ms=3, linewidth=1, label='k=' + str(k), c=color, alpha=0.5)
-        #     # ax.set_xlim((4, 61))
-        #     ax.legend(bbox_to_anchor=(0.5, 1.4), ncol=5, loc=9, prop={'size': 9.7},
-        #               bbox_transform=ax.transAxes, facecolor='lime', framealpha=0.2)
-        #     ax.annotate('ControlPlane',
-        #                 xy=(50, 35), xycoords='data',
-        #                 xytext=(50, 35), textcoords='data',
-        #                 size=8, va="center", ha="center",
-        #                 bbox=dict(boxstyle="round", fc="lime", alpha=0.04))
 
         if flag == 1:
             ax.set_xticks([i for i in range(0, 12)])
@@ -297,12 +261,7 @@ class signproximity():
                             nDF.mean().values + nDF.std().values, color='lime',
                             alpha=0.4, linewidth=0, label='1 STD', zorder=3, interpolate=True)
             ax.figure.legend(bbox_to_anchor=(0.5, 2.55), ncol=3, loc=9, bbox_transform=ax.transAxes)
-            # ax.set_xlim((4, 61))
-            # ax.annotate('DataPlane',
-            #             xy=(45, 35), xycoords='data',
-            #             xytext=(50, 38), textcoords='data',
-            #             size=8, va="center", ha="center",
-            #             bbox=dict(boxstyle="round", fc="lime", alpha=0.04))
+
 
         return
 
@@ -321,34 +280,13 @@ class signproximity():
 
             spDF_Tmp = spDF.head(spDF.shape[0] - vaCt)
             nDF = spDF.tail(vaCt)
-            # ax.plot([i for i in range(nDF.mean().values.size)], nDF.mean().values, marker='s', ms=1.5, linewidth=1,
-            #         color='black')
-            # ax.fill_between([i for i in range(nDF.mean().values.size)], nDF.mean().values - nDF.std().values,
-            #                 nDF.mean().values + nDF.std().values)
             for i, (name, row) in enumerate(spDF_Tmp.iterrows()):
-                # ax.set_title(row.name)
-                # ax.set_aspect('equal')
-                # ax.plot([i for i in range(row.size)], np.log(row.values))
-                # if i == len(spDF_Tmp) - 1:
-                #     ax.plot([i for i in range(row.size)], row.values, marker='s', linewidth=1, color='blue')
                 if i == 0:
                     if dataset == 'bgpclear_second' and self.delta == 10 and k == 1 and eName == 5 and e == 33:
                         self.plotFunction([i for i in range(row.size)], row.values, nDF, k=1, flag=0)
-                        # w = True
-                        # ax.plot([i for i in range(row.size)], row.values, marker='.', linewidth=1)
-                        # ax.set_title(str(dataset) + '_delta=' + str(self.delta) + '_Kneighbor=' + str(k) + '_' + str(eName) + '_' + str(e))
-                        # plot_name = 'Kneighbor=' + str(k) + '_delta=' + str(self.delta) + '_' + str(
-                        #     eName) + '_' + str(e)
-                        # plotme(plt, plot_id, plot_name, plot_path='./SignProximityResults/' + str(self.node),
-                        #       show_flag=SHOW_PLOT_FLAG, pdf_only=True)
                     if dataset == 'bgpclear_second' and self.delta == 10 and k == 1 and eName == 6 and e == 0:
                         self.plotFunction([i for i in range(row.size)], row.values, nDF, k=1, flag=1)
                         w = True
                         plot_name = 'SP_Delta_k_alarms'
                         plotme(plt, plot_id, plot_name, show_flag=SHOW_PLOT_FLAG)
                         plt.close()
-        # if w:
-        #     plot_name = 'SP_Delta_k_alarms'
-        #     plotme(plt, plot_id, plot_name, show_flag=SHOW_PLOT_FLAG)
-        # plt.close()
-        # plt.show()
