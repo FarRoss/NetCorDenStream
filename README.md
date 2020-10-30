@@ -36,4 +36,8 @@ and <img src="https://render.githubusercontent.com/render/math?math=TP_{k, \delt
 
 #### References
 
-- [Comming...]
+- [```Paper```](https://icnp20.cs.ucr.edu/proceedings/hdrnets/Anomalous%20Model-Driven-Telemetry%20Network-Stream%20BGP%20Detection.pdf)
+- [```Presentation ppt [Comming...]```](https://icnp20.cs.ucr.edu/proceedings/hdrnets/Anomalous%20Model-Driven-Telemetry%20Network-Stream%20BGP%20Detection.pdf)
+- [```Video Presentation```](https://www.youtube.com/watch?v=XrpO-9wG0HA&feature=youtu.be&t=3481)
+
+
